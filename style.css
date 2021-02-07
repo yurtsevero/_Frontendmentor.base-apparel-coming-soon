@@ -22,6 +22,7 @@ body {
   font-size: 16px;
 }
 body {
+  background-image: url(images/bg-pattern-desktop.svg);
   width: 100vw;
   height: 100vh;
   display: flex;
