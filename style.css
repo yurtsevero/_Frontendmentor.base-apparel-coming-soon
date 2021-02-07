@@ -81,6 +81,13 @@ form ul li {
   border-radius: 24px;
   padding: 20px;
   margin-bottom: 20px;
+  outline: none;
+}
+#error-icon {
+  position: absolute;
+  right: 80px;
+  top: 12px;
+  display: none;
 }
 #button {
   position: absolute;
@@ -101,7 +108,7 @@ form ul li {
   box-shadow: 0px 15px 20px hsl(0, 44%, 78%, 0.25);
   transform: scale(1.05);
 }
-.error-msg {
+#error-msg {
   color: var(--soft-red);
   display: none;
 }
@@ -122,15 +129,16 @@ form ul li {
     flex-direction: column;
   }
   main::before {
-    content: "";
-    width: 610px;
-    height: 800px;
-    background-image: url(images/hero-desktop.jpg);
-    background-size: cover;
+    content: url(images/hero-desktop.jpg);
+    width: 42.36%;
+    height: 100%;
+    /* background-image: url(images/hero-desktop.jpg); */
+    /* background-size: auto; */
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0%;
+    bottom: 0;
   }
   main h1 {
     font-size: 4rem;
