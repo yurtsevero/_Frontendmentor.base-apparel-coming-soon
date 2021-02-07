@@ -105,3 +105,43 @@ form ul li {
   color: var(--soft-red);
   display: none;
 }
+@media (min-width: 1024px) {
+  body {
+    position: relative;
+  }
+  header {
+    width: 445px;
+    align-self: flex-start;
+    margin: 65px 0px 0px 210px;
+  }
+  main {
+    align-self: flex-start;
+    width: 445px;
+    height: 404px;
+    margin-left: 165px;
+    flex-direction: column;
+  }
+  main::before {
+    content: "";
+    width: 610px;
+    height: 800px;
+    background-image: url(images/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  main h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: left;
+  }
+  main p {
+    margin-top: 40px;
+    text-align: left;
+  }
+  form {
+    margin-top: 40px;
+  }
+}
